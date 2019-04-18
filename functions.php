@@ -56,6 +56,13 @@ function initiator_switch_theme() {
 add_action( 'after_switch_theme', 'initiator_switch_theme' );
 
 /**
+ * Displays an error if it doesn't meet the requirements.
+ */
+function initiator_upgrade_notice() {
+	printf( '<div class="error"><p>%s</p></div>', esc_html( initiator_compatibility_check() ) );
+}
+
+/**
  * 2.0 - Backdrop Core
  */
 
