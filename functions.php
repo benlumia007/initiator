@@ -72,3 +72,4 @@ if ( file_exists( get_parent_theme_file_path( '/vendor/autoload.php' ) ) ) {
 /**
  * 3.0 - Framework
  */
+require_once get_parent_theme_file_path( '/framework/framework.php' );
