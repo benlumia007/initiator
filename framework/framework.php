@@ -18,7 +18,7 @@
  * 1.0 - Create a new Framework
  */
 $initiator = new Benlumia007\Backdrop\Framework();
+$sidebar   = new Benlumia007\Backdrop\Framework\Sidebar();
+$menus     = new Benlumia007\Backdrop\Framework\Menu();
 
-$sidebar = new Benlumia007\Backdrop\Register\Sidebar();
-$sidebar->create_sidebar( 'Primary Sidebar', 'primary' );
 
