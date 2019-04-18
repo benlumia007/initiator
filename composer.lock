@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "cf40618c8c58cf182ad46806532f99d5",
+    "packages": [
+        {
+            "name": "benlumia007/backdrop-core",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/benlumia007/backdrop-core.git",
+                "reference": "a65420d045ff254aa1d368ec27466f351bf0172f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/a65420d045ff254aa1d368ec27466f351bf0172f",
+                "reference": "a65420d045ff254aa1d368ec27466f351bf0172f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Backdrop\\": "src/"
+                },
+                "files": [
+                    "src/class-framework.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Lu",
+                    "email": "benlumia007@gmail.com",
+                    "homepage": "https://benjlu.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A core that helps you build amazing themes",
+            "homepage": "https://github.com/benlumia007/backdrop-core",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2019-04-18T20:55:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "benlumia007/backdrop-core": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.6"
+    },
+    "platform-dev": []
+}
