@@ -29,7 +29,7 @@ function initiator_compatibility_check() {
 		return sprintf(
 			// translators: 1 =  a version string, 2 = current wp version string.
 			__( 'Initiator requires at least WordPress version %1$s. You are currently running %2$s. Please upgrade and try again.', 'initiator' ),
-			'4.9.6',
+			'5.0',
 			$GLOBALS['wp_version']
 		);
 	} elseif ( version_compare( PHP_VERSION, '5.6', '<' ) ) {
@@ -42,6 +42,18 @@ function initiator_compatibility_check() {
 	}
 	return '';
 }
+
+/**
+ * Triggered after switch themes and check if it meets the requirements.
+ */
+function initiator_switch_theme() {
+	if ( version_compare( $GLOBALS['wp_version'], '5.0', '<' ) || version_compare( PHP_VERSION, '5.6', '<' ) ) {
+		switch_theme( get_option( 'theme_switched' ) );
+		add_action( 'admin_notices', 'initiator_upgrade_notice' );
+	}
+	return false;
+}
+add_action( 'after_switch_theme', 'initiator_switch_theme' );
 
 /**
  * 2.0 - Backdrop Core
