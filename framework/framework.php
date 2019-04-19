@@ -17,8 +17,13 @@
 /**
  * 1.0 - Create a new Framework
  */
-$initiator = new Benlumia007\Backdrop\Framework();
-$sidebar   = new Benlumia007\Backdrop\Framework\Sidebar();
-$menus     = new Benlumia007\Backdrop\Framework\Menu();
+$initiator  = new Benlumia007\Backdrop\Framework();
+$sidebar    = new Benlumia007\Backdrop\Framework\Sidebar();
+$menus      = new Benlumia007\Backdrop\Framework\Menu();
+$customizer = new Benlumia007\Backdrop\Framework\Customizer();
 
-
+function test() {
+	add_theme_support('custom-background');
+	add_theme_support( 'custom-header' );
+}	
+add_action( 'after_setup_theme', 'test' );
