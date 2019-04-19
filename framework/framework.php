@@ -8,6 +8,7 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
+use Benlumia007\Backdrop\Register;
 /**
  * Table of Content
  *
@@ -17,13 +18,6 @@
 /**
  * 1.0 - Create a new Framework
  */
-$initiator  = new Benlumia007\Backdrop\Framework();
-$sidebar    = new Benlumia007\Backdrop\Framework\Sidebar();
-$menus      = new Benlumia007\Backdrop\Framework\Menu();
-$customizer = new Benlumia007\Backdrop\Framework\Customizer();
-
-function test() {
-	add_theme_support('custom-background');
-	add_theme_support( 'custom-header' );
-}	
-add_action( 'after_setup_theme', 'test' );
+$register_sidebar = new Register\Sidebar();
+$register_menu    = new Register\Menu();
+$register_customizer = new Register\Customizer();
