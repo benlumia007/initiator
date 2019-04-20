@@ -20,4 +20,4 @@ use Benlumia007\Backdrop\Register;
  */
 $register_sidebar = new Register\Sidebar();
 $register_menu    = new Register\Menu();
-$register_customizer = new Register\Customizer();
+$register_customizer = new Register\ThemeLayout();
