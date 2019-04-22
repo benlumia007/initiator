@@ -20,7 +20,7 @@
 		},
 		"files":[
 			"framework/framework.php",
-			"framework/functions-scripts.php"
+			"framework/functions-scripts.php",
 			"framework/functions-setup.php"
 		]
     },
