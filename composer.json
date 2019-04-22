@@ -19,7 +19,8 @@
             "Initiator\\": "framework/"
 		},
 		"files":[
-			"framework/framework.php"
+			"framework/framework.php",
+			"framework/functions-setup.php"
 		]
     },
     "require": {
