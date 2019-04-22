@@ -32,3 +32,21 @@ add_action(
 		wp_enqueue_style( 'initiator-style', get_stylesheet_uri(), array(), '1.0.0' );
 	}
 );
+
+add_action(
+	'wp_enqueue_scripts',
+	function() {
+		$text_color = get_header_textcolor();
+		if ( get_theme_support( 'custom-header', 'default-text-color' ) === $text_color ) {
+			return;
+		}
+		$value      = display_header_text() ? sprintf( 'color: #%s', esc_html( $text_color ) ) : 'display: none;';
+		$custom_css = "
+			.site-branding .site-title a,
+			.site-description {
+				{$value}
+			}
+		";
+		wp_add_inline_style( 'initiator-style', $custom_css );
+	}
+);
