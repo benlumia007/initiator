@@ -1,11 +1,6 @@
 <?php
 /**
- * Initiator ( index.php )
- *
- * The (index.php) template file is very flexible, it can be used to include all the references for the header, content,
- * aside, footer, and other pages created in WordPress. The (index.php) can also be divided into modular template files,
- * each taking on part of the workload. If you wish to not provide any other template files, the WordPress hierarchy may
- * have default template files or functions to perform their jobs.
+ * Initiator ( footer.php )
  *
  * @package     Initiator
  * @copyright   Copyright (C) 2019. Benjamin Lu
