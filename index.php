@@ -16,6 +16,10 @@
 ?>
 <?php get_header(); ?>
 	<section id="content" class="site-content">
-
+		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'no-sidebar' ) ); ?>">
+			<main id="main" class="content-area">
+				<?php Benlumia007\Backdrop\MainQuery\display( 'content-post-format' ); ?>
+			</main>
+		</div>
 	</section>
 <?php get_footer(); ?>
