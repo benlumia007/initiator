@@ -62,3 +62,35 @@ add_action(
 		load_theme_textdomain( 'initiator', get_parent_theme_file_path( '/languages ' ) );
 	}
 );
+
+/**
+ * Add support for custom header.
+ */
+add_action(
+	'after_setup_theme',
+	function() {
+		add_theme_support(
+			'custom-header',
+			[
+				'default-text-color' => 'ffffff',
+				'default-image'      => get_theme_file_uri( '/assets/images/header-image.jpg' ),
+				'height'             => 1200,
+				'max-width'          => 2000,
+				'width'              => 2000,
+				'flex-height'        => false,
+				'flex-width'         => false,
+			]
+		);
+
+		register_default_headers(
+			array(
+				'header-image' => array(
+					'url'           => '%s/assets/images/header-image.jpg',
+					'thumbnail_url' => '%s/assets/images/header-image.jpg',
+					'description'   => esc_html__( 'Header Image', 'initiator' ),
+				),
+			)
+		);
+	}
+);
+
