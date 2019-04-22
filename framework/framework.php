@@ -21,3 +21,4 @@
  * to the theme, such as Menu, Sidebar, and Global Layout.
  */
 $initiator = new Benlumia007\Backdrop\Framework();
+$customize = new Initiator\Customize\Customize();
