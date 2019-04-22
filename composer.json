@@ -17,7 +17,10 @@
     "autoload": {
         "psr-4": {
             "Initiator\\": "framework/"
-        }
+		},
+		"files":[
+			"framework/framework.php"
+		]
     },
     "require": {
         "php": ">=5.6",
