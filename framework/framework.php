@@ -13,7 +13,7 @@
 /**
  * Create a new framework instance
  *
- * This will create an instance of the framework allowing you to initialize within the theme.
+ * This will create an instance of the framework allowing you to initialize the theme.
  */
 $framework = Benlumia007\Backdrop\Framework::get_instance();
 
@@ -23,4 +23,3 @@ $framework = Benlumia007\Backdrop\Framework::get_instance();
  * Creates and calls and boots additional features, allowing the theme to fully function.
  */
 $framework->boot();
-
