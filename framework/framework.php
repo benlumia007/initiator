@@ -20,5 +20,6 @@
  * This will initialize te Backdrop Core Framework and will add all the necessary components and features
  * to the theme, such as Menu, Sidebar, and Global Layout.
  */
-$initiator = new Benlumia007\Backdrop\Framework();
-$customize = new Initiator\Customize\Customize();
+$framework = Benlumia007\Backdrop\Framework::get_instance();
+
+$framework->boot();
