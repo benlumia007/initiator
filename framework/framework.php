@@ -23,3 +23,4 @@ $framework = Benlumia007\Backdrop\Framework::get_instance();
  * Creates and calls and boots additional features, allowing the theme to fully function.
  */
 $framework->boot();
+
