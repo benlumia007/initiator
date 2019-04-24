@@ -15,7 +15,6 @@
 			<main id="main" class="content-area">
 				<?php Benlumia007\Backdrop\MainQuery\display( 'content-single' ); ?>
 			</main>
-			<?php Benlumia007\Backdrop\Sidebar\display( 'primary' ); ?>
 		</div>
 	</div>
 <?php get_footer(); ?>
