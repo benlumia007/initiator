@@ -8,6 +8,7 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
+use Benlumia007\Backdrop\Site\Site as site;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -21,8 +22,8 @@
 <div id="container" class="site-container">
 	<header id="header" class="site-header">
 		<div class="site-branding">
-			<?php Benlumia007\Backdrop\Site\display( 'site-title' ); ?>
-			<?php Benlumia007\Backdrop\Site\display( 'site-description' ); ?>
+			<?php site::display( 'site-title' ); ?>
+			<?php site::display( 'site-description' ); ?>
 		</div>
 		<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
 	</header>
