@@ -8,13 +8,14 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
+use Benlumia007\Backdrop\Entry\Entry as entry;
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php Benlumia007\Backdrop\Entry\display( 'entry-title' ); ?>
+		<?php entry::display( 'entry-title' ); ?>
 	</header>
 	<div class="entry-metadata">
-		<?php Benlumia007\Backdrop\Entry\display( 'entry-posted-on' ); ?>
+		<?php entry::display( 'posted-on' ); ?>
 	</div>
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -32,6 +33,6 @@
 			?>
 	</div>
 	<div class="entry-taxonomies">
-		<?php Benlumia007\Backdrop\Entry\display( 'entry-taxonomies' ); ?>
+		<?php entry::display( 'taxonomies' ); ?>
 	</div>
 </article>

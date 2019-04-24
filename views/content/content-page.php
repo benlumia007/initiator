@@ -8,11 +8,11 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
+use Benlumia007\Backdrop\Entry\Entry as entry;
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php Benlumia007\Backdrop\Entry\display( 'entry-post-thumbnail' ); ?>
 	<header class="entry-header">
-		<?php Benlumia007\Backdrop\Entry\display( 'entry-title' ); ?>
+		<?php entry::display( 'entry-title' ); ?>
 	</header>
 	<div class="entry-content">
 		<?php the_content(); ?>

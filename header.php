@@ -9,6 +9,7 @@
  */
 
 use Benlumia007\Backdrop\Site\Site as site;
+use Benlumia007\Backdrop\View\View as menu;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -25,5 +26,5 @@ use Benlumia007\Backdrop\Site\Site as site;
 			<?php site::display( 'site-title' ); ?>
 			<?php site::display( 'site-description' ); ?>
 		</div>
-		<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
+		<?php menu::display( 'menu', [ 'primary' ] ); ?>
 	</header>

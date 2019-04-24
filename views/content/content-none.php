@@ -10,7 +10,6 @@
 
 ?>
 <article id="post-0" <?php post_class( 'post' ); ?>>
-	<?php Benlumi007\Backdrop\Entry\display( 'entry-post-thumbnail' ); ?>
 	<header class="entry-header">
 		<h1 class="entry-title">
 			<?php esc_html_e( 'Nothing Found', 'initiator' ); ?>

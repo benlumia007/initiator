@@ -13,14 +13,16 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
+use Benlumia007\Backdrop\View\View as loop;
+use Benlumia007\Backdrop\View\View as sidebar;
 ?>
 <?php get_header(); ?>
 	<section id="content" class="site-content">
 		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'no-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
-				<?php Benlumia007\Backdrop\MainQuery\display( 'content-post-format' ); ?>
+				<?php loop::display( 'loop', [ 'content-post-format' ] ); ?>
 			</main>
-			<?php Benlumia007\Backdrop\View\display( 'sidebar', [ 'primary' ] ); ?>
+			<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
 		</div>
 	</section>
 <?php get_footer(); ?>

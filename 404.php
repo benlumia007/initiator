@@ -8,6 +8,8 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
+use Benlumia007\Backdrop\Entry\Entry as entry;
+use Benlumia007\Backdrop\View\View as sidebar;
 ?>
 
 <?php get_header(); ?>
@@ -16,7 +18,7 @@
 			<div class="content-area">
 				<article id="post-0" <?php post_class( 'post' ); ?>>
 					<header class="entry-header">
-						<?php Benlumia007\Backdrop\Entry\display( 'entry-title' ); ?>
+						<?php entry::display( 'entry-title' ); ?>
 					</header>
 					<div class="entry-content">
 						<p>
@@ -30,7 +32,7 @@
 					</div>
 				</article>
 			</div>
-			<?php Benlumia007\Backdrop\Sidebar\display( 'primary' ); ?>
+			<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
 		</div>
 	</div>
 <?php get_footer(); ?>

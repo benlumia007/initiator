@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "5848df4c824c66a8c8c390593737dd01859da7f5"
+                "reference": "ab5793fe59d1cb0adda48965c06bf05ad95798ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/5848df4c824c66a8c8c390593737dd01859da7f5",
-                "reference": "5848df4c824c66a8c8c390593737dd01859da7f5",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/ab5793fe59d1cb0adda48965c06bf05ad95798ec",
+                "reference": "ab5793fe59d1cb0adda48965c06bf05ad95798ec",
                 "shasum": ""
             },
             "require": {
@@ -27,11 +27,7 @@
             "autoload": {
                 "psr-4": {
                     "Benlumia007\\Backdrop\\": "src/"
-                },
-                "files": [
-                    "src/MainQuery/functions-loop.php",
-                    "src/View/functions-view.php"
-                ]
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -50,7 +46,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2019-04-24T08:26:45+00:00"
+            "time": "2019-04-24T15:06:31+00:00"
         }
     ],
     "packages-dev": [],
