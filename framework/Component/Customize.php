@@ -13,9 +13,9 @@
  *
  * 1.0 - Create a New Framework
  */
-namespace Initiator\Customize;
+namespace Initiator\Component;
 
-use Benlumia007\Backdrop\Customize\CustomizeAbstract;
+use Benlumia007\Backdrop\Contracts\Abstracts\Customize as CustomizeAbstract;
 
 /**
  * 1.0 - Create a New Framework
