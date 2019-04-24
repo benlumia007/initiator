@@ -20,7 +20,7 @@
 			<main id="main" class="content-area">
 				<?php Benlumia007\Backdrop\MainQuery\display( 'content-post-format' ); ?>
 			</main>
-			<?php Benlumia007\Backdrop\Sidebar\display( 'sidebar', [ 'primary' ] ); ?>
+			<?php Benlumia007\Backdrop\View\display( 'sidebar', [ 'primary' ] ); ?>
 		</div>
 	</section>
 <?php get_footer(); ?>

@@ -16,7 +16,7 @@
 				// Translators: 1 = Date, 2 = Site Link.
 				esc_html__( 'Copyright &#169; %1$s. %2$s', 'initiator' ),
 				absint( date_i18n( 'Y' ) ),
-				Benlumia007\Backdrop\Site\display( 'site-link' ) // phpcs:ignore
+				Benlumia007\Backdrop\View\display( 'site', [ 'link' ] ) // phpcs:ignore
 			);
 			?>
 			<br />
@@ -24,8 +24,8 @@
 			printf(
 				// Translators: 1 = WordPress Link, 2 = Theme Link.
 				esc_html__( 'Powered By %1$s and %2$s', 'initiator' ),
-				Benlumia007\Backdrop\Site\display( 'wp-link' ), // phpcs:ignore
-				Benlumia007\Backdrop\Site\display( 'theme-link' ) // phpcs:ignore
+				Benlumia007\Backdrop\View\display( 'site', [ 'wp-link' ] ), // phpcs:ignore
+				Benlumia007\Backdrop\View\display( 'theme-link' ) // phpcs:ignore
 			);
 			?>
 		</div>
