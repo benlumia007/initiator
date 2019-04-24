@@ -29,6 +29,7 @@
         "benlumia007/backdrop-core": "dev-develop"
 	},
 	"require-dev": {
-		"wptrt/wpthemereview": "*"
+		"wptrt/wpthemereview": "*",
+		"dealerdirect/phpcodesniffer-composer-installer": "0.4.4"
 	}
 }
