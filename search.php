@@ -19,5 +19,5 @@ use Benlumia007\Backdrop\View\View as sidebar;
 			</main>
 			<?php loop::display( 'sidebar', [ 'primary' ] ); ?>
 		</div>
-	</div>
+	</section>
 <?php get_footer(); ?>
