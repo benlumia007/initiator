@@ -19,14 +19,16 @@ use Benlumia007\Backdrop\View\View as sidebar;
 	<section id="content" class="site-content">
 		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'no-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
-				<?php if ( have_posts() ) : ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'views/content/content', get_post_format() ); ?>
-				<?php endwhile; ?>
-						<?php the_posts_pagination(); ?>
-				<?php else : ?>
-						<?php get_template_part( 'views/content/content', 'none' ); ?>
-				<?php endif; ?>
+				<?php
+					if ( have_posts() ) :
+						while ( have_posts() ) : the_post();
+							get_template_part( 'views/content/content', get_post_format() );
+						endwhile;
+						the_posts_pagination();
+					else :
+							get_template_part( 'views/content/content', 'none' );
+					endif;
+				?>
 			</main>
 			<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
 		</div>
