@@ -26,9 +26,7 @@ namespace Initiator;
  * @link   https://developer.wordpress.org/themes/basics/theme-functions/
  * @link   https://developer.wordpress.org/reference/functions/load_theme_textdomain/
  */
-add_action(
-	'after_setup_theme',
-	function() {
+add_action( 'after_setup_theme', function() {
 		/**
 		 * Content width is a theme feature, when set, it can set the maximum allow width for any content in teh theme like
 		 * oEmbeds and images added to posts.
@@ -92,11 +90,9 @@ add_action(
 /**
  * Add support for custom header.
  */
-add_action(
-	'after_setup_theme',
-	function() {
-		add_theme_support(
-			'custom-header',
+add_action( 'after_setup_theme', function() {
+
+		add_theme_support( 'custom-header',
 			[
 				'default-text-color' => 'ffffff',
 				'default-image'      => get_theme_file_uri( '/assets/images/header-image.jpg' ),
@@ -117,6 +113,22 @@ add_action(
 				),
 			)
 		);
-	}
-);
+} );
 
+/**
+ * Add Support Custom Background
+ */
+add_action( 'after_setup_theme', function() {
+
+	add_theme_support( 'custom-background', [
+		'default-image'          => '',
+		'default-preset'         => 'default',
+		'default-position-x'     => 'left',
+		'default-position-y'     => 'top',
+		'default-size'           => 'auto',
+		'default-repeat'         => 'repeat',
+		'default-attachment'     => 'scroll',
+		'default-color'          => '',
+	] );
+
+} );
