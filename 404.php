@@ -8,7 +8,6 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
-use Benlumia007\Backdrop\Entry\Entry as entry;
 use Benlumia007\Backdrop\View\View as sidebar;
 ?>
 
@@ -16,19 +15,7 @@ use Benlumia007\Backdrop\View\View as sidebar;
 	<section id="content" class="site-content">
 		<div id="global-layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'left-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
-				<article id="post-0" <?php post_class( 'post' ); ?>>
-					<header class="entry-header">
-						<?php entry::display( 'entry-title' ); ?>
-					</header>
-					<div class="entry-content">
-						<p>
-							<?php
-								printf( esc_html__( "Just kidding! It looks like you have stumbled upon a page that doesn't exist, so that means I probably broke something. To find what you are looking for, check out the most recent articles below or try a search: ", 'initiator' ) );
-							?>
-						</p>
-						<?php get_search_form(); ?>
-					</div>
-				</article>
+				<?php get_template_part( 'views/content/content', '404'); ?>
 			</main>
 			<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
 		</div>
