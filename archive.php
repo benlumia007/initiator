@@ -15,10 +15,11 @@ use Benlumia007\Backdrop\View\View as sidebar;
 		<div id="global-layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'no-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
 				<?php
-					if ( have_posts() ) : ?>
-						<header class="archive-header">
-							<h1 class="archive-title"><?php the_archive_title(); ?></h1>
-						</header>
+					if ( have_posts() ) :
+				?>
+					<header class="archive-header">
+						<h1 class="archive-title"><?php the_archive_title(); ?></h1>
+					</header>
 				<?php
 					while ( have_posts() ) : the_post();
 						get_template_part( 'views/content/content', get_post_format() );
