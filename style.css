@@ -669,3 +669,7 @@ figure {
 /**
  * 31.0 - Media Queries (Desktop 73.125em 1170px))
  */
+
+.tabs .active {
+	background: #ffffff;
+}
