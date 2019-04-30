@@ -25,5 +25,3 @@ $framework = Benlumia007\Backdrop\Framework::get_instance();
 $framework->boot();
 
 $customize = new Initiator\Component\Customize();
-
-$admin_page = new Benlumia007\Backdrop\Register\Admin();
