@@ -17,11 +17,4 @@
  */
 $framework = Benlumia007\Backdrop\Framework::get_instance();
 
-/**
- * Loads boot();
- *
- * Creates and calls and boots additional features, allowing the theme to fully function.
- */
-$framework->boot();
-
 $customize = new Initiator\Component\Customize();
