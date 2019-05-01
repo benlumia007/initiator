@@ -18,3 +18,4 @@
 $framework = Benlumia007\Backdrop\Framework::get_instance();
 
 $customize = new Initiator\Component\Customize();
+$admin     = new Initiator\Component\Admin();
