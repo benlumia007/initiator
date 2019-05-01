@@ -12,16 +12,25 @@ use Benlumia007\Backdrop\View\View as sidebar;
 ?>
 <?php get_header(); ?>
 	<section id="content" class="site-content">
-		<div id="global-layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'no-sidebar' ) ); ?>">
+		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'no-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
 				<?php
-					while ( have_posts() ) : the_post();
-						get_template_part( 'views/content/content', 'page' );
-					endwhile;
-					comments_template();
+					if ( have_posts() ) :
+						printf(
+							'<h1 class="entry-title">%1$s %2$s</h1>',
+							esc_html__( 'Search for: ', 'backdrop-core' ),
+							'<span class="search-result">' . get_search_query() . '</span>'
+						);
+						while ( have_posts() ) : the_post();
+							get_template_part( 'views/content/content', get_post_format() );
+						endwhile;
+						the_posts_pagination();
+					else :
+							get_template_part( 'views/content/content', 'none' );
+					endif;
 				?>
 			</main>
-			<?php loop::display( 'sidebar', [ 'primary' ] ); ?>
+			<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
 		</div>
 	</section>
 <?php get_footer(); ?>
