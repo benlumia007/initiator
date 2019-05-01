@@ -18,7 +18,7 @@ use Benlumia007\Backdrop\View\View as sidebar;
 					if ( have_posts() ) :
 				?>
 					<header class="archive-header">
-						<h1 class="archive-title"><?php the_archive_title(); ?></h1>
+						<?php the_archive_title( '<h1 class="archive-title">', '</h1>'); ?>
 					</header>
 				<?php
 					while ( have_posts() ) : the_post();
