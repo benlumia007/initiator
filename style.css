@@ -645,6 +645,9 @@ figure {
 /**
  * 25.0 - Media Queries (Mobile Small 30em (480px))
  */
+@media screen and ( max-width: 30em ) {
+	
+}
 
 /**
  * 26.0 - Media Queries (Mobile Small 37.5em (600px))
