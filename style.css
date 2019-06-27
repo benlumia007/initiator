@@ -660,12 +660,15 @@ figure {
  * 27.0 - Media Queries (Mobile Medium 48.688em (667px))
  */
 @media screen and ( min-width: 37.563em ) and ( max-width: 41.688em ) {
-	
+
 }
 
 /**
  * 28.0 - Media Queries (Mobile Large 46em (736px))
  */
+@media screen and ( min-width: 41.750em ) and ( max-width: 46em ) {
+
+}
 
 /**
  * 29.0 - Media Queries (Tablet Small 48em (768px))
