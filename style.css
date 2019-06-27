@@ -673,6 +673,9 @@ figure {
 /**
  * 29.0 - Media Queries (Tablet Small 48em (768px))
  */
+@media screen and ( min-width: 46.063em ) and ( max-width: 48em ) {
+
+}
 
 /**
  * 30.0 - Media Queries (Tablet Large 64em (1024px))
