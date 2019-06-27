@@ -19,6 +19,4 @@ Formatting instructions: https://make.wordpress.org/themes/2015/04/29/a-revised-
 
 == Installation ==
 
-== Changelog ==
-
 == Upgrade Notice ==
