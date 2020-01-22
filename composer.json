@@ -16,13 +16,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Initiator\\": "framework/"
+            "Initiator\\": "app/"
 		},
 		"files":[
-			"framework/framework.php",
-			"framework/functions-filters.php",
-			"framework/functions-scripts.php",
-			"framework/functions-setup.php"
+			"app/framework.php",
+			"app/functions-filters.php",
+			"app/functions-scripts.php",
+			"app/functions-setup.php"
 		]
     },
     "require": {
