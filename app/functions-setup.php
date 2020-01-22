@@ -81,6 +81,11 @@ add_action( 'after_setup_theme', function() {
 		add_image_size( 'initiator-large-thumbnails', 1170, 614, true );
 
 		/**
+		 * By add_theme_support( 'wp-block-styles' );. This should enable block styles on the frontend.
+		 */
+		add_theme_support( 'wp-block-styles' );
+
+		/**
 		 * Load theme translation.
 		 */
 		load_theme_textdomain( 'initiator', get_parent_theme_file_path( '/languages ' ) );
