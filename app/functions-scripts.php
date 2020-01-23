@@ -61,6 +61,6 @@ add_action(
 add_action(
 	'enqueue_block_editor_assets',
 	function() {
-		wp_enqueue_style( 'backdrop-custom-fonts', get_theme_file_uri( '/vendor/benlumia007/backdrop-core/assets/fonts/custom-fonts.css' ), array(), '1.0.0' );
+		wp_enqueue_style( 'initiator-custom-fonts', get_theme_file_uri( '/vendor/benlumia007/backdrop-core/assets/fonts/custom-fonts.css' ), array(), '1.0.0' );
 	}
 );
