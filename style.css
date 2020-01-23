@@ -736,9 +736,22 @@ figure {
  * 31.0 - Media Queries (Desktop 73.125em 1170px))
  */
 @media screen and ( min-width: 73.125em ) {
-	.wp
-	.wp-block-gallery.columns-3 .blocks-gallery-image,
-	.wp-block-gallery.columns-3 .blocks-gallery-item {
+	.wp-block-gallery.columns-2 .blocks-gallery-image,
+	.wp-block-gallery.columns-2 .blocks-gallery-item,
+  .wp-block-gallery.columns-3 .blocks-gallery-image,
+  .wp-block-gallery.columns-3 .blocks-gallery-item,
+	.wp-block-gallery.columns-4 .blocks-gallery-image,
+  .wp-block-gallery.columns-4 .blocks-gallery-item,
+	.wp-block-gallery.columns-5 .blocks-gallery-image,
+  .wp-block-gallery.columns-5 .blocks-gallery-item,
+	.wp-block-gallery.columns-6 .blocks-gallery-image,
+  .wp-block-gallery.columns-6 .blocks-gallery-item,
+	.wp-block-gallery.columns-7 .blocks-gallery-image,
+  .wp-block-gallery.columns-7 .blocks-gallery-item,
+	.wp-block-gallery.columns-8 .blocks-gallery-image,
+  .wp-block-gallery.columns-8 .blocks-gallery-item,
+	.wp-block-gallery.columns-9 .blocks-gallery-image,
+	.wp-block-gallery.columns-9 .blocks-gallery-item {
 		width: 100%;
 		margin-right: 0;
 	}
