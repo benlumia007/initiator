@@ -653,7 +653,9 @@ figure {
 /**
  * 24.0 - Galleries
  */
-.wp-block-gallery {
+.wp-block-gallery,
+.wp-block-columns {
+  border: 1px solid #000;
 	display: grid;
 	grid-gap: 1.125em;
 }
@@ -665,39 +667,48 @@ figure {
 }
 
 .wp-block-gallery .blocks-gallery-image,
-.wp-block-gallery .blocks-gallery-item {
+.wp-block-gallery .blocks-gallery-item,
+.wp-block-columns .wp-block-column {
 	margin: 0;
 }
 
-.wp-block-gallery.columns-2 {
+.wp-block-gallery.columns-2,
+.wp-block-columns.has-2-columns {
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.wp-block-gallery.columns-3 {
+.wp-block-gallery.columns-3,
+.wp-block-columns.has-3-columns {
 	grid-template-columns: repeat(3, 1fr);
 }
 
-.wp-block-gallery.columns-4 {
+.wp-block-gallery.columns-4,
+.wp-block-columns.has-4-columns {
 	grid-template-columns: repeat(4, 1fr);
 }
 
-.wp-block-gallery.columns-5 {
+.wp-block-gallery.columns-5,
+.wp-block-columns.has-5-columns {
 	grid-template-columns: repeat(5, 1fr);
 }
 
-.wp-block-gallery.columns-6 {
+.wp-block-gallery.columns-6,
+.wp-block-columns.has-6-columns {
 	grid-template-columns: repeat(6, 1fr);
 }
 
-.wp-block-gallery.columns-7 {
+.wp-block-gallery.columns-7,
+.wp-block-columns.has-7-columns {
 	grid-template-columns: repeat(7, 1fr);
 }
 
-.wp-block-gallery.columns-8 {
+.wp-block-gallery.columns-8,
+.wp-block-columns.has-8-columns {
 	grid-template-columns: repeat(9, 1fr);
 }
 
-.wp-block-gallery.columns-9 {
+.wp-block-gallery.columns-9,
+.wp-block-columns.has-9-columns {
 	grid-template-columns: repeat(9, 1fr);
 }
 
