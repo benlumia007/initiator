@@ -8,8 +8,8 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
-use Benlumia007\Backdrop\Site\Site as site;
-use Benlumia007\Backdrop\View\View as menu;
+use Backdrop\Site\Site as site;
+use Backdrop\View\View as menu;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>

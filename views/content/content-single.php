@@ -8,7 +8,7 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
-use Benlumia007\Backdrop\Entry\Entry as entry;
+use Backdrop\Entry\Entry as entry;
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">

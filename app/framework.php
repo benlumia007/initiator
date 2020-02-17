@@ -15,7 +15,7 @@
  *
  * This will create an instance of the framework allowing you to initialize the theme.
  */
-$initiator = Benlumia007\Backdrop\Framework::get_instance();
+$initiator = Backdrop\Framework::get_instance();
 
 $initiator->customize = new Initiator\Component\Customize();
 $initiator->admin     = new Initiator\Component\Admin();

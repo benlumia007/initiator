@@ -8,7 +8,7 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
-use Benlumia007\Backdrop\View\View as sidebar;
+use Backdrop\View\View as sidebar;
 ?>
 
 <?php get_header(); ?>

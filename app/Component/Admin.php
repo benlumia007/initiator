@@ -10,7 +10,7 @@
 
 namespace Initiator\Component;
 
-use Benlumia007\Backdrop\Contracts\Admin\Admin as AdminPage;
+use Backdrop\Contracts\Admin\Admin as AdminPage;
 
 /**
  * Implements Displayable

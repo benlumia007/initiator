@@ -8,7 +8,7 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
-use Benlumia007\Backdrop\Site\Site as site;
+use Backdrop\Site\Site as site;
 ?>
 	<footer id="footer" class="site-footer">
 		<div class="site-info">
