@@ -100,7 +100,7 @@ class Admin extends AdminPage {
 	<?php }
 
 	public function admin_enqueue() {
-		wp_register_style( 'admin-style', get_theme_file_uri() . '/vendor/benlumia007/backdrop-core/assets/css/admin-styles', array(), '1.0.0' );
+		wp_register_style( 'admin-style', get_theme_file_uri() . '/assets/css/admin-styles.css', array(), '1.0.0' );
 		wp_enqueue_style( 'admin-style' );
 	}
 }
