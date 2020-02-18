@@ -20,16 +20,23 @@ $initiator = Backdrop\Framework::get_instance();
 $initiator->customize = new Initiator\Component\Customize();
 $initiator->admin     = new Initiator\Component\Admin();
 
-$menus = array(
-	'primary' => esc_html__( 'Primary Navigation', 'initiator' ),
-	'social' => esc_html( 'Social Navigation', 'initiator' ),
-);
-$initiator->menu = new Backdrop\Menu\Menu( $menus );
 
-$sidebars = array(
-	'primary' => array(
-		'name' => esc_html__( 'Primary Sidebar', 'initiator' ),
-		'desc' => esc_html__( 'Only for Posts', 'initiator' ),
-	),
+$initiator->menus = new Backdrop\Menu\Menu(
+	$args = array(
+		'primary' => esc_html__( 'Primary Navigation', 'initiator' ),
+		'social' => esc_html( 'Social Navigation', 'initiator' ),
+	)
+ );
+
+$initiator->sidebars = new Backdrop\Sidebar\Sidebar(
+	$args = array(
+		'primary' => array(
+			'name' => esc_html__( 'Primary Sidebar', 'initiator' ),
+			'desc' => esc_html__( 'Only for Posts', 'initiator' ),
+		),
+		'secondary' => array(
+			'name' => esc_html__( 'Secondary Sidebar', 'initiator' ),
+			'desc' => esc_html__( 'Pages Only', 'initiator' ),
+		)
+	)
 );
-$initiator->sidebar = new Backdrop\Sidebar\Sidebar( $sidebars );
