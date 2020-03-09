@@ -24,6 +24,7 @@ $initiator->admin     = new Initiator\Component\Admin();
 $initiator->menus = new Backdrop\Menu\Menu(
 	$args = array(
 		'primary' => esc_html__( 'Primary Navigation', 'initiator' ),
+		'secondary' => esc_html__( 'Secondary Navigation', 'initiator' ),
 		'social' => esc_html( 'Social Navigation', 'initiator' ),
 	)
  );
