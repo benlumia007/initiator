@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "8f15c9e27475a667c58f944f16f0f071a82d110b"
+                "reference": "09245eba41b422531f4df0c0dd49637e9418abf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/8f15c9e27475a667c58f944f16f0f071a82d110b",
-                "reference": "8f15c9e27475a667c58f944f16f0f071a82d110b",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/09245eba41b422531f4df0c0dd49637e9418abf1",
+                "reference": "09245eba41b422531f4df0c0dd49637e9418abf1",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2020-03-10T22:11:14+00:00"
+            "time": "2020-03-10T23:26:24+00:00"
         }
     ],
     "packages-dev": [],
