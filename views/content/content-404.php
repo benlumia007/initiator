@@ -7,12 +7,10 @@
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
  * @author      Benjamin Lu ( https://benjlu.com )
  */
-
-use Backdrop\Entry\Entry as entry;
 ?>
 <article id="post-0" <?php post_class( 'post' ); ?>>
 	<header class="entry-header">
-		<?php entry::display( 'entry-title' ); ?>
+		<h1 class="entry-title"><?php esc_html_e( 'Page Not Found', 'initiator' ); ?></h1>
 	</header>
 	<div class="entry-content">
 		<p>

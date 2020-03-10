@@ -16,6 +16,8 @@
 		<?php Backdrop\Entry\display_title(); ?>
 		<div class="entry-metadata">
 			<?php Backdrop\Entry\display_author(); ?>
+			<?php Backdrop\Entry\display_date(); ?>
+			<?php Backdrop\Entry\display_comments_link(); ?>
 		</div>
 	</header>
 	<div class="entry-excerpt">

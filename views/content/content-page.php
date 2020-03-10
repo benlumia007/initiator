@@ -8,11 +8,10 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
-use Backdrop\Entry\Entry as entry;
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php entry::display( 'entry-title' ); ?>
+		<?php Backdrop\Entry\display_title(); ?>
 	</header>
 	<div class="entry-content">
 		<?php the_content(); ?>
