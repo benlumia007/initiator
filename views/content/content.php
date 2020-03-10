@@ -15,7 +15,7 @@
 		<?php } ?>
 		<?php Backdrop\Entry\display_title(); ?>
 		<div class="entry-metadata">
-			
+			<?php Backdrop\Entry\display_author(); ?>
 		</div>
 	</header>
 	<div class="entry-excerpt">
