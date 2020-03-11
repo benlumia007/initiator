@@ -1,0 +1,34 @@
+////
+/// Accessibility styles.
+///
+/// @group  Utilities
+/// @author Benjamin Lu <benlumia007@gmail.com>
+/// @link   https://github.com/benlumia007/initiator
+////
+
+.screen-reader-text {
+	clip:      rect( 0.063em, 0.063em, 0.063em, 0.063em );
+	clip-path: inset( 50% );
+	position:  absolute;
+	width:     0.063em;
+	height:    0.063em;
+	margin:    -0.063em;
+	overflow:  hidden;
+	padding:   0;
+	word-wrap: normal;
+	border:    none;
+
+	&:active,
+	&:focus {
+		clip:            auto;
+		clip-path:       none;
+		display:         block;
+		height:          auto;
+		width:           auto;
+		z-index:         100000;
+		text-decoration: none;
+	}
+}
+
+
+.skip-link {}
