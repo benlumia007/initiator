@@ -1,0 +1,26 @@
+{
+  "name": "initiator",
+  "version": "1.0.0",
+  "description": "Initiator is a WordPress Starter Theme.",
+  "main": "resources/assets/js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benlumia007/initiator.git"
+  },
+  "author": "Benjamin Lu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benlumia007/initiator/issues"
+  },
+  "homepage": "https://github.com/benlumia007/initiator#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.1",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.26.2",
+    "sass-loader": "^8.0.2"
+  }
+}
