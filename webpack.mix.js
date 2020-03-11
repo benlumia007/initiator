@@ -39,5 +39,5 @@ mix.setPublicPath( 'assets' );
  */
 
 // Compile SASS/CSS.
-mix.sass( `${devPath}/scss/style.scss`,             'assets/css', )
-   .sass( `${devPath}/scss/editor.scss`,             'assets/css' );
+mix.sass( `${devPath}/scss/screen.scss`, 'assets/css', )
+   .sass( `${devPath}/scss/editor.scss`, 'assets/css' );
