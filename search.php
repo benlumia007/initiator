@@ -8,7 +8,7 @@
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
-use Backdrop\View\View as sidebar;
+use Benlumia007\Backdrop\View\View as sidebar;
 ?>
 <?php get_header(); ?>
 	<section id="content" class="site-content">
@@ -18,7 +18,7 @@ use Backdrop\View\View as sidebar;
 					if ( have_posts() ) :
 						printf(
 							'<h1 class="entry-title">%1$s %2$s</h1>',
-							esc_html__( 'Search for: ', 'backdrop-core' ),
+							esc_html__( 'Search for: ', 'initiator' ),
 							'<span class="search-result">' . get_search_query() . '</span>'
 						);
 						while ( have_posts() ) : the_post();

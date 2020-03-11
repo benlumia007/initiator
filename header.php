@@ -7,9 +7,7 @@
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
  * @author      Benjamin Lu ( https://benjlu.com )
  */
-
-use Backdrop\Site\Site as site;
-use Backdrop\View\View as menu;
+use Benlumia007\Backdrop\View\View as menu;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -25,8 +23,8 @@ use Backdrop\View\View as menu;
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'initiator' ) ?></a>
 	<header id="header" class="site-header">
 		<div class="site-branding">
-			<?php site::display( 'site-title' ); ?>
-			<?php site::display( 'site-description' ); ?>
+			<?php Benlumia007\Backdrop\Site\display_site_title(); ?>
+			<?php Benlumia007\Backdrop\Site\display_site_description(); ?>
 		</div>
 		<?php menu::display( 'menu', [ 'primary' ] ); ?>
 	</header>

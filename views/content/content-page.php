@@ -11,7 +11,7 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php Backdrop\Entry\display_title(); ?>
+		<?php Benlumia007\Backdrop\Entry\display_title(); ?>
 	</header>
 	<div class="entry-content">
 		<?php the_content(); ?>

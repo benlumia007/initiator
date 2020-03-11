@@ -10,12 +10,12 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php Backdrop\Entry\display_title(); ?>
+		<?php Benlumia007\Backdrop\Entry\display_title(); ?>
 	</header>
 	<div class="entry-metadata">
-		<?php Backdrop\Entry\display_author(); ?>
-		<?php Backdrop\Entry\display_date(); ?>
-		<?php Backdrop\Entry\display_comments_link(); ?>
+		<?php Benlumia007\Backdrop\Entry\display_author(); ?>
+		<?php Benlumia007\Backdrop\Entry\display_date(); ?>
+		<?php Benlumia007\Backdrop\Entry\display_comments_link(); ?>
 	</div>
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -33,7 +33,7 @@
 			?>
 	</div>
 	<div class="entry-taxonomies">
-		<?php Backdrop\Entry\display_categories(); ?>
-		<?php Backdrop\Entry\display_tags(); ?>
+		<?php Benlumia007\Backdrop\Entry\display_categories(); ?>
+		<?php Benlumia007\Backdrop\Entry\display_tags(); ?>
 	</div>
 </article>
