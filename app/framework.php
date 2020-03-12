@@ -16,3 +16,12 @@
  * This will create an instance of the framework allowing you to initialize the theme.
  */
 $initiator = Benlumia007\Backdrop\Core\Application::get_instance();
+
+$initiator->sidebars = new Benlumia007\Backdrop\Sidebar\Sidebar(
+	$args = [
+		'primary' => [
+			'name' => esc_html__( 'Primary Sidebar', 'initiator' ),
+			'desc' => esc_html__( 'Test', 'initiator' ),
+		],
+	]
+);
