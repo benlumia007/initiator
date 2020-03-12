@@ -1,7 +1,3 @@
-@import 'header/site-header';
-@import 'navigation/primary';
-@import 'navigation/secondary';
-@import 'navigation/social';
-@import 'layout/content-area';
-@import 'layout/widget-area';
-@import 'footer/site-footer';
+@import 'structure/index';
+@import 'navigation/index';
+@import 'content/index';
