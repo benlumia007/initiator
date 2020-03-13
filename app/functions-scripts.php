@@ -29,9 +29,9 @@ add_action(
 		/**
 		 * This is the main stylesheet that is being enqueue. This should be used rather than using @import stylesheets.
 		 */
-		wp_enqueue_style( 'initiator-style', get_stylesheet_uri(), array(), '1.0.0' );
-
 		wp_enqueue_style( 'initiator-screen', get_theme_file_uri( 'assets/css/screen.css' ), array(), '1.0.0' );
+
+
 
 		/**
 		 * This allows users to comment by clicking on reply so that it gets nested.
