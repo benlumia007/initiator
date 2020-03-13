@@ -37,7 +37,7 @@ add_action(
 		 */
 		wp_enqueue_script( 'initiator-app', get_theme_file_uri( 'public/js/app.js' ), array('jquery'), '1.0.0', true );
 
-		wp_localize_script( 'initiator-navigation', 'initiatorScreenReaderText', array(
+		wp_localize_script( 'initiator-app', 'initiatorScreenReaderText', array(
 			'expand'   => '<span class="screen-reader-text">' . esc_html__( 'expand child menu', 'backdrop' ) . '</span>',
 			'collapse' => '<span class="screen-reader-text">' . esc_html__( 'collapse child menu', 'backdrop' ) . '</span>',
 		) );
