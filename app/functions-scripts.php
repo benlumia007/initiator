@@ -27,9 +27,15 @@ add_action(
 	'wp_enqueue_scripts',
 	function() {
 		/**
-		 * This is the main stylesheet that is being enqueue. This should be used rather than using @import stylesheets.
+		 * Rather than enqueue the main stylesheet, we are going to enqueue sceen.css since all of the styles will
+		 * go here. We only need parse the information for the Theme in style.css so that it can be activated.
 		 */
 		wp_enqueue_style( 'initiator-screen', get_theme_file_uri( 'assets/css/screen.css' ), array(), '1.0.0' );
+
+		/**
+		 * We will be enqueue the app.js file, which mainly be for the navigation only.
+		 */
+		wp_enqueue_script( 'initiator-app', get_theme_file_uri( 'assets/js/app.js' ), array('jquery'), '1.0.0', true );
 
 
 
