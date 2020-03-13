@@ -39,10 +39,9 @@ if ( process.env.export ) {
 const devPath  = 'resources';
 
 /*
- * Sets the path to the generated assets. By default, this is the `/dist` folder
- * in the theme. If doing something custom, make sure to change this everywhere.
+ * Sets the path to the generated assets. By default, this is the `/public` folder in the theme.
  */
-mix.setPublicPath( 'assets' );
+mix.setPublicPath( 'public' );
 
 /*
  * Set Laravel Mix options.
@@ -76,7 +75,7 @@ mix.version();
  *
  * @link https://laravel.com/docs/5.6/mix#working-with-scripts
  */
-mix.js( `${devPath}/js/app.js`, 'assets/js' );
+mix.js( `${devPath}/js/app.js`, 'js' );
 
 /*
  * Compile CSS. Mix supports Sass, Less, Stylus, and plain CSS, and has functions
@@ -88,5 +87,5 @@ mix.js( `${devPath}/js/app.js`, 'assets/js' );
  */
 
 // Compile SASS/CSS.
-mix.sass( `${devPath}/scss/screen.scss`, 'assets/css', )
-   .sass( `${devPath}/scss/editor.scss`, 'assets/css' );
+mix.sass( `${devPath}/scss/screen.scss`, 'css', )
+   .sass( `${devPath}/scss/editor.scss`, 'css' );
