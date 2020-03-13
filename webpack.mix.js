@@ -18,6 +18,21 @@
  const mix = require( 'laravel-mix' );
 
  /*
+ * -----------------------------------------------------------------------------
+ * Theme Export Process
+ * -----------------------------------------------------------------------------
+ * Configure the export process in `webpack.mix.export.js`. This bit of code
+ * should remain at the top of the file here so that it bails early when the
+ * `export` command is run.
+ * -----------------------------------------------------------------------------
+ */
+
+if ( process.env.export ) {
+	const exportTheme = require( './webpack.mix.export.js' );
+	return;
+}
+
+ /*
  * Sets the development path to assets. By default, this is the `/resources`
  * folder in the theme.
  */
