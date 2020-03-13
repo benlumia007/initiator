@@ -45,6 +45,40 @@ const devPath  = 'resources';
 mix.setPublicPath( 'assets' );
 
 /*
+ * Set Laravel Mix options.
+ *
+ * @link https://laravel.com/docs/5.6/mix#postcss
+ * @link https://laravel.com/docs/5.6/mix#url-processing
+ */
+mix.options( {
+	postCss        : [ require( 'postcss-preset-env' )() ],
+	processCssUrls : false
+} );
+
+/*
+ * Builds sources maps for assets.
+ *
+ * @link https://laravel.com/docs/5.6/mix#css-source-maps
+ */
+mix.sourceMaps();
+
+/*
+ * Versioning and cache busting. Append a unique hash for production assets. If
+ * you only want versioned assets in production, do a conditional check for
+ * `mix.inProduction()`.
+ *
+ * @link https://laravel.com/docs/5.6/mix#versioning-and-cache-busting
+ */
+mix.version();
+
+/*
+ * Compile JavaScript.
+ *
+ * @link https://laravel.com/docs/5.6/mix#working-with-scripts
+ */
+mix.js( `${devPath}/js/app.js`, 'assets/js' );
+
+/*
  * Compile CSS. Mix supports Sass, Less, Stylus, and plain CSS, and has functions
  * for each of them.
  *
