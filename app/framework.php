@@ -17,6 +17,12 @@
  */
 $initiator = Benlumia007\Backdrop\Core\Application::get_instance();
 
+$initiator->menus = new Benlumia007\Backdrop\Menu\Menu(
+	$args = [
+		'primary' => esc_html__( 'Primary Navigation', 'initiator' ),
+	]
+);
+
 $initiator->sidebars = new Benlumia007\Backdrop\Sidebar\Sidebar(
 	$args = [
 		'primary' => [
