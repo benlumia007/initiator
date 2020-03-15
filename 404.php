@@ -7,8 +7,6 @@
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
  * @author      Benjamin Lu ( https://benjlu.com )
  */
-
-use Backdrop\View\View as sidebar;
 ?>
 
 <?php get_header(); ?>
@@ -17,7 +15,7 @@ use Backdrop\View\View as sidebar;
 			<main id="main" class="content-area">
 				<?php get_template_part( 'views/content/content', '404'); ?>
 			</main>
-			<?php sidebar::display( 'sidebar', [ 'primary' ] ); ?>
+			<?php Benlumia007\Backdrop\View\display( 'sidebar', [ 'primary' ] ); ?>
 		</div>
 	</section>
 <?php get_footer(); ?>
