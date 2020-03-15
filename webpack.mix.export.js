@@ -24,6 +24,7 @@ let exportPath = 'initiator';
 let files = [
 	'404.php',
 	'archive.php',
+	'author.php',
 	'changelog.md',
 	'comments.php',
 	'footer.php',
