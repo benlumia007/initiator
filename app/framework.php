@@ -15,7 +15,7 @@
  *
  * This will create an instance of the framework allowing you to initialize the theme.
  */
-$initiator = Benlumia007\Backdrop\Core\Application::get_instance();
+$initiator = Benlumia007\Backdrop\Framework::get_instance();
 
 $initiator->menus = new Benlumia007\Backdrop\Menu\Menu(
 	$args = [
