@@ -14,7 +14,7 @@
 			<main id="main" class="content-area">
 				<?php
 					while ( have_posts() ) : the_post();
-						get_template_part( 'views/content/content', 'page' );
+						get_template_part( 'public/views/content/content', 'page' );
 					endwhile;
 					comments_template();
 				?>

@@ -20,11 +20,11 @@
 					</header>
 				<?php
 					while ( have_posts() ) : the_post();
-						get_template_part( 'views/content/content', get_post_format() );
+						get_template_part( 'public/views/content/content', get_post_format() );
 					endwhile;
 						the_posts_pagination();
 					else :
-						get_template_part( 'views/content/content', 'none' );
+						get_template_part( 'public/views/content/content', 'none' );
 					endif;
 				?>
 			</main>
