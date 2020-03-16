@@ -20,11 +20,11 @@
 							'<span class="search-result">' . get_search_query() . '</span>'
 						);
 						while ( have_posts() ) : the_post();
-							get_template_part( 'public/views/content/content', get_post_format() );
+						Benlumia007\Backdrop\Template\get_template_part( 'content/content', get_post_format() );
 						endwhile;
 						the_posts_pagination();
 					else :
-							get_template_part( 'public/views/content/content', 'none' );
+						Benlumia007\Backdrop\Template\get_template_part( 'content/content', 'none' );
 					endif;
 				?>
 			</main>
