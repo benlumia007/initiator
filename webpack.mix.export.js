@@ -43,8 +43,7 @@ let files = [
 // Folders to include.
 let folders = [
 	'app',
-	'assets',
-	'language',
+	'public',
 	'vendor'
 ];
 
