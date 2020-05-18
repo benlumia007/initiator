@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf40618c8c58cf182ad46806532f99d5",
+    "content-hash": "5dae0eb28c8d17e63de12549d76fde47",
     "packages": [
         {
             "name": "benlumia007/backdrop-core",
-            "version": "dev-develop",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "9d7af78f51b0e208611412bef389d5e3627f2f0d"
+                "reference": "3dd08858b47127d7d002bebe9a6fed71e02528ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/9d7af78f51b0e208611412bef389d5e3627f2f0d",
-                "reference": "9d7af78f51b0e208611412bef389d5e3627f2f0d",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/3dd08858b47127d7d002bebe9a6fed71e02528ed",
+                "reference": "3dd08858b47127d7d002bebe9a6fed71e02528ed",
                 "shasum": ""
             },
             "require": {
@@ -52,19 +52,18 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2020-03-17T21:22:38+00:00"
+            "time": "2020-04-11T05:21:03+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "benlumia007/backdrop-core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.6"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
