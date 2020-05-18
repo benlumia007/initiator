@@ -1,7 +1,6 @@
 /public/mix-minifest.json
 /public/css/*
 /public/js/*
-/public/js/*
 
 /node_modules
 /vendor
