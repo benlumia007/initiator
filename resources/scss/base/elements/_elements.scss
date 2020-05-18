@@ -1,21 +1,21 @@
-////
-/// Primary screen stylesheet.
-///
-/// This is the primary stylesheet. We don't actually write any styles here.
-/// Instead, we import all of our styles from partials within the sub-folders.
-/// This file is set up based on the Inverted Triangle CSS (ITCSS) system,
-/// which gets more specific as we drill down each layer.  This keeps your
-/// style code lean and organized.
-///
-/// The bulk of your code should be within the `/components` folder.  By
-/// default, we follow the Block-Element-Modifier (BEM) system in our HTML.
-/// Each "block" is a "component" in our CSS.
-///
-/// @group  Elements
-/// @author Benjamin Lu <benlumia007@gmail.com>
-/// @link   https://github.com/benlumia007/initiator
-////
+//
+// Initiator ( _elements.scss )
+//
+// @package     Initiator
+// @copyright   Copyright (C) 2019-2020. Benjamin Lu
+// @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author      Benjamin Lu ( https://benjlu.com )
+//
 
+//
+// Table of Content
+//
+// 1.0 - Elements
+//
+
+//
+// 1.0 - Elements
+//
 body {
 	font-family: $font-family-body;
 }
