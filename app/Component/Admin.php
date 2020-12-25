@@ -1,8 +1,8 @@
 <?php // phpcs:ignore
 /**
- * Backdrop Core ( Admin.php )
+ * Initiator ( Admin.php )
  *
- * @package     Backdrop Core
+ * @package     Initiator
  * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General PUblic License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
  * @author      Benjamin Lu ( https://benjlu.com )
@@ -45,7 +45,7 @@ class Admin extends AdminPage {
 
 	public function tabs( $current = 'introduction' ) {
 		$tabs = array(
-			'introduction' => esc_html__( 'Introduction', 'backdrop-core' ),
+			'introduction' => esc_html__( 'Introduction', 'initiator' ),
 		);
 
 		$admin_nonce = wp_create_nonce( 'admin_nonce' );
@@ -85,17 +85,17 @@ class Admin extends AdminPage {
 	}
 
 	public function introduction() { ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'backdrop-core' ); ?></h2>
+		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'initiator' ); ?></h2>
 		<ul>
-			<li><?php echo esc_html( __('Theme Name: ', 'backdrop-core' ) . $this->theme_info->name ); ?></li>
-			<li><?php echo esc_html( __('Theme Version: ', 'backdrop-core' ) . $this->theme_info->version ); ?></li>
+			<li><?php echo esc_html( __('Theme Name: ', 'initiator' ) . $this->theme_info->name ); ?></li>
+			<li><?php echo esc_html( __('Theme Version: ', 'initiator' ) . $this->theme_info->version ); ?></li>
 		</ul>
-		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'backdrop-core' ); ?></h2>
-		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'backdrop-core' ); ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'backdrop-core' ); ?></h2>
+		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'initiator' ); ?></h2>
+		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'initiator' ); ?>
+		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'initiator' ); ?></h2>
 		<ul>
-			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/jetpack' ); ?>"><?php esc_html_e( 'Jetpack by WordPress.com', 'backdrop-core' ); ?></a></li>
-			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'backdrop-core' ); ?></a></li>
+			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/jetpack' ); ?>"><?php esc_html_e( 'Jetpack by WordPress.com', 'initiator' ); ?></a></li>
+			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'initiator' ); ?></a></li>
 		</ul>
 	<?php }
 
