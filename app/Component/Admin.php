@@ -1,11 +1,11 @@
-<?php // phpcs:ignore
+<?php
 /**
  * Initiator ( Admin.php )
  *
- * @package     Initiator
- * @copyright   Copyright (C) 2019. Benjamin Lu
- * @license     GNU General PUblic License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author      Benjamin Lu ( https://benjlu.com )
+ * @package   Initiator
+ * @copyright Copyright (C) 2019-2021. Benjamin Lu
+ * @license   GNU General PUblic License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+ * @author    Benjamin Lu ( https://benjlu.com )
  */
 
 namespace Initiator\Component;
