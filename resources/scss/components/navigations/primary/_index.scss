@@ -1,0 +1,312 @@
+//
+// Initiator ( components/_index.scss )
+//
+// @package   Initiator
+// @copyright Copyright (C) 2019-2021. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://getbenonit.com )
+//
+
+.primary-navigation {
+	display: block;
+    margin: 0;
+
+    .dropdown-toggle {
+        background-color: transparent;
+        border: 0.063em solid transparent;
+        border-left: 1px solid #ffffff;
+        color: #ffffff;
+        padding: 1.1em;
+        position: absolute;
+        right: 0.5em;
+        top: 1em;
+        text-align: center;
+
+        &:hover,
+        &:focus {
+            border: 0.063em dashed;
+        }
+
+        .fontawesome {
+            font-family: 'Font Awesome 5 Free';
+
+            &:before {
+                content: "\f078";
+            }
+        }
+    }
+
+    .toggled-on {
+        .dropdown-toggle {
+            .fontawesome {
+                &:before {
+                    content: "\f077";
+                }
+            }
+        }
+    }
+    
+    /* Styling the Links */
+    a {
+        background: #000000;
+        border-bottom: none;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: block;
+        padding: 1.25em 0.75em;
+        text-decoration: none;
+        width: 100%;
+
+        &:hover,
+        &:focus {
+            background: #606060;
+        }
+    } 
+    
+    /* Hide Submenus by default using absolute positioning instead of display:none;. */
+    .nav-menu,
+    .nav-menu li,
+    .nav-menu ul,
+    .nav-menu li:hover > ul,
+    .nav-menu li:focus > ul {
+        left: -9999em;
+        list-style: none;
+		margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+    }
+
+    .nav-menu {
+        ul {
+            a {
+                background-color:#444444;
+                padding-left: 2em;
+            }
+
+            ul {
+                a {
+                    background: #444444;
+                    padding-left: 4em;
+                }
+            };
+        }
+    }
+}
+
+/* Styling the Menu Toggle Button */
+.menu-toggle {
+    background: #000000;
+    border: 0.063em solid #ffffff;
+	border-radius: 0.3125em;
+	font-family: font-family( 'primary' );
+	font-size: 1rem;
+    color: #ffffff;
+    display: none;
+    padding: 0.75em 0.625em 0.625em 0.75em;
+    position: absolute;
+    right: 1em;
+    top: 3em;
+}
+
+.toggled {
+    .nav-menu {
+        display: block;
+        left: 1.125em;
+        margin: 2rem 1.125em 0 1.125em 1.125em;
+        right: 1.125em;
+        position: fixed;
+        top: 6em;
+
+        li {
+            left: unset;
+            position: relative;
+
+            > {
+                .sub-menu {
+                    display: none;
+                }
+            }
+        }
+
+        .toggled-on {
+            > {
+                .sub-menu {
+                    display: block;
+                    position: relative;
+                    left: 0;
+                    top: 100%;
+                }
+            }
+        }
+    }
+}
+
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a { 
+	font-weight: 900;
+}
+
+@media screen and (max-width: 30em) {
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 3.250em;
+	}
+	
+	.toggled {
+		.nav-menu {
+			margin-top: 1rem;
+		}
+	}
+}
+
+@media screen and (min-width: 30.0625em) and (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 3.250em;
+	}
+	
+	.toggled {
+		.nav-menu {
+			margin-top: 1rem;
+		}
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 3.250em;
+	}
+	
+	.toggled {
+		.nav-menu {
+			margin-top: 1rem;
+		}
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .primary-navigation {
+        a {
+            background: transparent;
+            color: #000000;
+        }
+        
+        .nav-menu {
+            display: flex;
+            position: static;
+
+            li {
+                position: relative;
+                width: max-content;
+                left: unset;
+
+                a {
+                    padding: 0.75em;
+
+                    &:hover,
+                    &:focus {
+                        background: #ffffff;
+                    }
+                }
+
+                .sub-menu {
+                    position: absolute;
+                    left: -9999em;
+                    top: 100%;
+
+                    li {
+                        margin-bottom: 0.063em;
+                        position: relative;
+                        width: 20em;
+
+                        a {
+                            background: #333333;
+                            color: #ffffff;
+
+                            &:hover {
+                                background: #444444;
+                            }
+                        }
+
+                        .sub-menu {
+                            left: -9999em;
+                            position: absolute;
+                            top: 0;
+
+                            li {
+                                a {
+                                    padding-left: 0.938rem;
+                                }
+                            }
+                        }
+
+                        &:hover,
+                        &:focus,
+                        &.focus {
+                            > .sub-menu {
+                                left: 101%;
+                            }
+                        }
+                    }
+
+                    .menu-item-has-children,
+                    .page_item_has_children {
+                        > {
+                            a {
+                                &:after {
+                                    content: "\f054";
+                                    font-family: 'Font Awesome 5 Free';
+                                    position: absolute;
+                                    right: 0.5em;
+                                    top: 50%;
+                                    transform: translate(0, -50%);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover,
+                &:focus,
+                &.focus {
+                    > .sub-menu {
+                        left: 0;
+                    }
+                }
+            }
+
+            .menu-item-has-children,
+            .page_item_has_children {
+                > {
+                    a {
+                        &:after {
+                            font-family: 'Font Awesome 5 Free';
+                            content: "\f078";
+                            vertical-align: bottom;
+                            margin-left: 0.25em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .dropdown-toggle {
+        display: none
+    }
+}
