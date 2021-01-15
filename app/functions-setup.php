@@ -2,10 +2,10 @@
 /**
  * Initiator ( functions-setup.php )
  *
- * @package     Initiator
- * @copyright   Copyright (C) 2019. Benjamin Lu
- * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author      Benjamin Lu ( https://benjlu.com )
+ * @package   Initiator
+ * @copyright Copyright (C) 2019-2021. Benjamin Lu
+ * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+ * @author    Benjamin Lu ( https://benjlu.com )
  */
 
 /**
@@ -31,7 +31,7 @@ add_action( 'after_setup_theme', function() {
 		 * Content width is a theme feature, when set, it can set the maximum allow width for any content in teh theme like
 		 * oEmbeds and images added to posts.
 		 */
-		$GLOBALS['content_width'] = 810;
+		$GLOBALS['content_width'] = 800;
 
 		/**
 		 * By adding add_theme_support( 'title-tag' );, this will let WordPress manage all document titles and should be use instead of wp_title();.
@@ -89,7 +89,7 @@ add_action( 'after_setup_theme', function() {
 		 * By adding add_theme_support( 'editor-styles' ); and add_editor_style(); to enable styles in the backend of the editor.
 		 */
 		add_theme_support( 'editor-styles' );
-		add_editor_style( 'assets/css/editor-styles.css' );
+		add_editor_style( 'public/css/editor.css' );
 
 		/**
 		 * By adding add_theme_support( 'align-wide' );. This will enable alignwide and alignfull.
@@ -111,7 +111,7 @@ add_action( 'after_setup_theme', function() {
 		add_theme_support( 'custom-header',
 			[
 				'default-text-color' => 'ffffff',
-				'default-image'      => get_theme_file_uri( '/assets/images/header-image.jpg' ),
+				'default-image'      => get_theme_file_uri( '/public/images/header-image.jpg' ),
 				'height'             => 1200,
 				'max-width'          => 2000,
 				'width'              => 2000,
@@ -123,8 +123,8 @@ add_action( 'after_setup_theme', function() {
 		register_default_headers(
 			array(
 				'header-image' => array(
-					'url'           => '%s/assets/images/header-image.jpg',
-					'thumbnail_url' => '%s/assets/images/header-image.jpg',
+					'url'           => '%s/public/images/header-image.jpg',
+					'thumbnail_url' => '%s/public/images/header-image.jpg',
 					'description'   => esc_html__( 'Header Image', 'initiator' ),
 				),
 			)
