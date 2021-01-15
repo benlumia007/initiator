@@ -1,0 +1,56 @@
+//
+// Initiator ( elements/_index.scss )
+//
+// @package   Initiator
+// @copyright Copyright (C) 2019-2021. Benjamin Lu
+// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+// @author    Benjamin Lu ( https://getbenonit.com )
+//
+
+h1 {
+	display: block;
+	font-family: font-family( 'heading' );
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin: 0.67em 0;
+}
+
+h2 {
+	display: block;
+	font-family: font-family( 'heading' );
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 0.83em 0;
+}
+
+h3 {
+	display: block;
+	font-family: font-family( 'heading' );
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 1em 0;
+}
+
+h4 {
+	display: block;
+	font-family: font-family( 'heading' );
+	font-size: 1.25rem;
+	font-weight: 700;
+	margin: 1.33em 0;
+}
+
+h5 {
+	display: block;
+	font-family: font-family( 'heading' );
+	font-size: 1.125rem;
+	font-weight: 700;
+	margin: 1.67em 0;
+}
+
+h6 {
+	display: block;
+	font-family: font-family( 'heading' );
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 2.33em 0;
+}
