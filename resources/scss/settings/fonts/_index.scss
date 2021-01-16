@@ -46,6 +46,5 @@ $text-7xl : 4rem;      // 64px
 /// @return {string}         Font family value.
 
 @function font-family( $name ) {
-
 	@return map-get( font-families(), $name );
 }
