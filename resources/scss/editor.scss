@@ -1,8 +1,31 @@
+////
+/// Editor stylesheet.
+///
+/// This is the primary editor stylesheet. It is used for the WordPress 5.0+
+/// block editor (Gutenberg) and is not intended for older versions of the
+/// WordPress edit screen.
+///
+/// @group  Styles
+/// @author Benjamin Lu <benlumia007@gmail.com>
+/// @link   https://getbenonit.com/themes/initiator
+////
+
+// -----------------------------------------------------------------------------
+// Import settings.
+// -----------------------------------------------------------------------------
 //
-// Initiator ( _editor.scss )
+// Settings handle the configuration and variables.
+
+@import 'settings/index';
+
+// -----------------------------------------------------------------------------
+// Import element styles.
+// -----------------------------------------------------------------------------
 //
-// @package   Initiator
-// @copyright Copyright (C) 2019-2021. Benjamin Lu
-// @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
-// @author    Benjamin Lu ( https://getbenonit.com )
-//
+// Elements are (or should be) class-less designs for the base HTML elements.
+// The styles in this folder should only handle the defaults. More specific
+// styles should be handled later in the cascade.
+
+@import 'elements/index';
+
+@import 'editor/index';
