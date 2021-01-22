@@ -17,7 +17,9 @@ $initiator = Benlumia007\Backdrop\Framework::get_instance();
 
 $initiator->menus = new Benlumia007\Backdrop\Menu\Menu(
 	$args = [
-		'primary' => esc_html__( 'Primary Navigation', 'initiator' ),
+		'primary'   => esc_html__( 'Primary Navigation', 'initiator' ),
+		'secondary' => esc_html__( 'Secondary Navigation', 'initiator' ),
+		'social'    => esc_html__( 'Social Navigation', 'initiator' ),
 	]
 );
 
