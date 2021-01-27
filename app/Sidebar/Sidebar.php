@@ -1,6 +1,6 @@
 <?php
 
-namespace Initiator\Aside;
+namespace Initiator\Sidebar;
 use Benlumia007\Backdrop\Aside\Sidebar as SidebarContract;
 
 class Sidebar extends SidebarContract {

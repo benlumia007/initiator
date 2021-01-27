@@ -11,9 +11,9 @@
 /**
  * Define namespace
  */
-namespace Initiator\Navigation;
+namespace Initiator\Sidebar;
 use Benlumia007\Backdrop\Tools\ServiceProvider;
-use Initiator\Navigation\Menu;
+use Initiator\Sidebar\Sidebar;
 
 /**
  * Attr provider class.
@@ -21,7 +21,7 @@ use Initiator\Navigation\Menu;
  * @since  5.0.0
  * @access public
  */
-class MenuServiceProvider extends ServiceProvider {
+class Provider extends ServiceProvider {
 
 	/**
 	 * Binds the implementation of the attributes contract to the container.
@@ -31,13 +31,11 @@ class MenuServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
+		$this->app->singleton( 'sidebar', Sidebar::class );
 
-		$this->app->bind( Menu::class );
-
-        $this->app->alias( Menu::class, 'menu' );
     }
     
     public function boot() {
-        $this->app->resolve( 'menu' )->boot();
+        $this->app->resolve( 'sidebar' )->boot();
     }
 }

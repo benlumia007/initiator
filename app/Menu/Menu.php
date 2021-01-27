@@ -1,6 +1,6 @@
 <?php
 
-namespace Initiator\Navigation;
+namespace Initiator\Menu;
 use Benlumia007\Backdrop\Navigation\Menu as MenuContract;
 
 class Menu extends MenuContract {
