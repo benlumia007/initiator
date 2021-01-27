@@ -32,9 +32,8 @@ class SidebarServiceProvider extends ServiceProvider {
 	 */
 	public function register() {
 
-		$this->app->bind( Sidebar::class );
+		$this->app->singleton( 'sidebar', Sidebar::class );
 
-        $this->app->alias( Sidebar::class, 'sidebar' );
     }
     
     public function boot() {
