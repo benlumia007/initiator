@@ -15,14 +15,11 @@
  */
 $initiator = new Benlumia007\Backdrop\Core\Framework();
 
-
 /**
  * Register Service Provider with the Framework
  */
 $initiator->provider( Initiator\Aside\SidebarServiceProvider::class );
 $initiator->provider( Initiator\Navigation\MenuServiceProvider::class );
-
-
 
 /**
  * Boot the Framework
