@@ -4,25 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5dae0eb28c8d17e63de12549d76fde47",
+    "content-hash": "cf40618c8c58cf182ad46806532f99d5",
     "packages": [
         {
             "name": "benlumia007/backdrop-core",
-            "version": "1.1.6",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "08e0138d9056375b4ea29ccacafc5548697405f8"
+                "reference": "5ae5572b6135d48e63c228aad3bbbe63cebc416d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/08e0138d9056375b4ea29ccacafc5548697405f8",
-                "reference": "08e0138d9056375b4ea29ccacafc5548697405f8",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/5ae5572b6135d48e63c228aad3bbbe63cebc416d",
+                "reference": "5ae5572b6135d48e63c228aad3bbbe63cebc416d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -54,15 +55,17 @@
             ],
             "support": {
                 "issues": "https://github.com/benlumia007/backdrop-core/issues",
-                "source": "https://github.com/benlumia007/backdrop-core/tree/1.1.6"
+                "source": "https://github.com/benlumia007/backdrop-core/tree/develop"
             },
-            "time": "2021-01-19T22:20:25+00:00"
+            "time": "2021-01-27T08:51:45+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "benlumia007/backdrop-core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -13,21 +13,17 @@
  *
  * This will create an instance of the framework allowing you to initialize the theme.
  */
-$initiator = Benlumia007\Backdrop\Framework::get_instance();
+$initiator = new Benlumia007\Backdrop\Core\Framework();
 
-$initiator->menus = new Benlumia007\Backdrop\Menu\Menu(
-	$args = [
-		'primary'   => esc_html__( 'Primary Navigation', 'initiator' ),
-		'secondary' => esc_html__( 'Secondary Navigation', 'initiator' ),
-		'social'    => esc_html__( 'Social Navigation', 'initiator' ),
-	]
-);
 
-$initiator->sidebars = new Benlumia007\Backdrop\Sidebar\Sidebar(
-	$args = [
-		'primary' => [
-			'name' => esc_html__( 'Primary Sidebar', 'initiator' ),
-			'desc' => esc_html__( 'Test', 'initiator' ),
-		],
-	]
-);
+/**
+ * Register Service Provider with the Framework
+ */
+$initiator->provider( Initiator\Aside\SidebarServiceProvider::class );
+
+
+
+/**
+ * Boot the Framework
+ */
+$initiator->boot();
