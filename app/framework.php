@@ -13,7 +13,7 @@
  *
  * This will create an instance of the framework allowing you to initialize the theme.
  */
-$initiator = new Benlumia007\Backdrop\Core\Framework();
+$initiator = new Benlumia007\Backdrop\Framework();
 
 /**
  * Register Service Provider with the Framework

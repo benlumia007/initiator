@@ -1,7 +1,7 @@
 <?php
 
 namespace Initiator\Menu;
-use Benlumia007\Backdrop\Navigation\Menu as MenuContract;
+use Benlumia007\Backdrop\Component\Menu as MenuContract;
 
 class Menu extends MenuContract {
     public function __construct( $menu_id = [] ) {

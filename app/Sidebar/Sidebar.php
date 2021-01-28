@@ -1,7 +1,7 @@
 <?php
 
 namespace Initiator\Sidebar;
-use Benlumia007\Backdrop\Aside\Sidebar as SidebarContract;
+use Benlumia007\Backdrop\Component\Sidebar as SidebarContract;
 
 class Sidebar extends SidebarContract {
     public function __construct( $sidebar_id = [] ) {
