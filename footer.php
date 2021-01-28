@@ -8,7 +8,7 @@
  * @author    Benjamin Lu ( https://getbenonit.com )
  */
 ?>
-	<footer id="footer" class="site-footer">
+	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<?php
 			printf(

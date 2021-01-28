@@ -20,13 +20,10 @@
 <?php wp_body_open(); ?>
 <div id="container" class="site-container">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'initiator' ) ?></a>
-	<header id="header" class="site-header">
+	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php Benlumia007\Backdrop\Site\display_site_title(); ?>
 			<?php Benlumia007\Backdrop\Site\display_site_description(); ?>
 		</div>
-		<nav id="site-navigation" class="primary-navigation">
-			<button class="menu-toggle" aria-control="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'initiator' ); ?></button>
-			<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
-		</nav>
+		<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
 	</header>
