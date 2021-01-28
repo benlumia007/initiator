@@ -25,5 +25,8 @@
 			<?php Benlumia007\Backdrop\Site\display_site_title(); ?>
 			<?php Benlumia007\Backdrop\Site\display_site_description(); ?>
 		</div>
-		<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
+		<nav id="site-navigation" class="primary-navigation">
+			<button class="menu-toggle" aria-control="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'initiator' ); ?></button>
+			<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
+		</nav>
 	</header>
