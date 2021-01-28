@@ -13,7 +13,7 @@
  */
 namespace Initiator\Menu;
 use Benlumia007\Backdrop\Tools\ServiceProvider;
-use Initiator\Menu\Menu;
+use Initiator\Menu\Component;
 
 /**
  * Attr provider class.
@@ -31,7 +31,7 @@ class Provider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
-		$this->app->singleton( 'menu', Menu::class );
+		$this->app->singleton( 'menu', Component::class );
     }
     
     public function boot() {

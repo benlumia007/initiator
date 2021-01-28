@@ -13,7 +13,7 @@
  */
 namespace Initiator\Sidebar;
 use Benlumia007\Backdrop\Tools\ServiceProvider;
-use Initiator\Sidebar\Sidebar;
+use Initiator\Sidebar\Component;
 
 /**
  * Attr provider class.
@@ -31,7 +31,7 @@ class Provider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
-		$this->app->singleton( 'sidebar', Sidebar::class );
+		$this->app->singleton( 'sidebar', Component::class );
 
     }
     

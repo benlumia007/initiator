@@ -3,7 +3,7 @@
 namespace Initiator\Menu;
 use Benlumia007\Backdrop\Component\Menu as MenuContract;
 
-class Menu extends MenuContract {
+class Component extends MenuContract {
     public function __construct( $menu_id = [] ) {
         $this->menu_id = $this->defaults();
     }
