@@ -4,26 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "665059dc5abdc5dfa48cdd04ad43c4d3",
+    "content-hash": "545bd7f8e02fd2d89c5103e7b5127d51",
     "packages": [
         {
             "name": "benlumia007/backdrop-core",
-            "version": "dev-version-2.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "1052cee7a0736e5fc7416b0b8b9e883a6071ef33"
+                "reference": "65824cac065898b88040fc1df23b5477902b6530"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/1052cee7a0736e5fc7416b0b8b9e883a6071ef33",
-                "reference": "1052cee7a0736e5fc7416b0b8b9e883a6071ef33",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/65824cac065898b88040fc1df23b5477902b6530",
+                "reference": "65824cac065898b88040fc1df23b5477902b6530",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -55,17 +54,15 @@
             ],
             "support": {
                 "issues": "https://github.com/benlumia007/backdrop-core/issues",
-                "source": "https://github.com/benlumia007/backdrop-core/tree/version-2.0.0"
+                "source": "https://github.com/benlumia007/backdrop-core/tree/2.0.0"
             },
-            "time": "2021-01-28T06:26:50+00:00"
+            "time": "2021-02-13T09:13:59+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "benlumia007/backdrop-core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
