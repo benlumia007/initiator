@@ -30,12 +30,12 @@ add_action(
 		 * Rather than enqueue the main stylesheet, we are going to enqueue sceen.css since all of the styles will
 		 * go here. We only need parse the information for the Theme in style.css so that it can be activated.
 		 */
-		wp_enqueue_style( 'initiator-screen', get_theme_file_uri( 'public/css/screen.css' ), array(), '1.0.0' );
+		wp_enqueue_style( 'initiator-screen', get_parent_theme_file_uri( 'public/css/screen.css' ), array(), '1.0.0' );
 
 		/**
 		 * We will be enqueue the app.js file, which mainly be for the navigation only.
 		 */
-		wp_enqueue_script( 'initiator-app', get_theme_file_uri( 'public/js/app.js' ), array('jquery'), '1.0.0', true );
+		wp_enqueue_script( 'initiator-app', get_parent_theme_file_uri( 'public/js/app.js' ), array('jquery'), '1.0.0', true );
 
 		/**
 		 * This allows users to comment by clicking on reply so that it gets nested.
