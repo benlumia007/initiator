@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "benlumia007/backdrop-core",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-core.git",
-                "reference": "65824cac065898b88040fc1df23b5477902b6530"
+                "reference": "2028b7a9094b8effc8da08eadf335f21951e582c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/65824cac065898b88040fc1df23b5477902b6530",
-                "reference": "65824cac065898b88040fc1df23b5477902b6530",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-core/zipball/2028b7a9094b8effc8da08eadf335f21951e582c",
+                "reference": "2028b7a9094b8effc8da08eadf335f21951e582c",
                 "shasum": ""
             },
             "require": {
@@ -54,9 +54,9 @@
             ],
             "support": {
                 "issues": "https://github.com/benlumia007/backdrop-core/issues",
-                "source": "https://github.com/benlumia007/backdrop-core/tree/2.0.0"
+                "source": "https://github.com/benlumia007/backdrop-core/tree/2.0.1"
             },
-            "time": "2021-02-13T09:13:59+00:00"
+            "time": "2021-02-23T19:12:16+00:00"
         }
     ],
     "packages-dev": [],
