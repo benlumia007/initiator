@@ -18,4 +18,4 @@ Coming Soon.
 ## Copyright and License
 Initiator is licensed under the GNU GPL, v2 or later
 
-© 2018-2020. Benjamin Lu
+© 2018-2021. Benjamin Lu
