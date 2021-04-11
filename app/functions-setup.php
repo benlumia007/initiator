@@ -111,7 +111,7 @@ add_action( 'after_setup_theme', function() {
 		add_theme_support( 'custom-header',
 			[
 				'default-text-color' => 'ffffff',
-				'default-image'      => get_theme_file_uri( '/public/images/header-image.jpg' ),
+				'default-image'      => get_parent_theme_file_uri( '/public/images/header-image.jpg' ),
 				'height'             => 1200,
 				'max-width'          => 2000,
 				'width'              => 2000,
