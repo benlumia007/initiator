@@ -20,9 +20,9 @@
     "export": "mix --mix-config=webpack.mix.export.js"
   },
   "devDependencies": {
-    "laravel-mix": "^6.0.18",
+    "laravel-mix": "^6.0.25",
     "postcss-preset-env": "^6.7.0",
-    "sass": "^1.32.12",
-    "sass-loader": "^11.0.1"
+    "sass": "^1.35.1",
+    "sass-loader": "^11.1.1"
   }
 }
